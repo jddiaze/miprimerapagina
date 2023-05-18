@@ -28,12 +28,13 @@ function validateForm() {
         fetch("https://formspree.io/f/xvonyypb", {
             method: "POST",
             headers: {
-                "Content-Type": "application/x-www-form-urlencoded"
+                'Accept': 'application/json'
             },
-            body: new URLSearchParams(new FormData(form)).toString()
+            body: new FormData(form)
         })
             .then(function (response) {
                 if (response.ok) {
+                    console.log(response);
                     alert("El formulario se ha enviado correctamente.");
                     form.reset();
                 } else {
