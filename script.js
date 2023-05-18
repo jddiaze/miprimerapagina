@@ -30,7 +30,7 @@ function validateForm() {
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
-            body: new URLSearchParams(new FormData(event.target)).toString()
+            body: new URLSearchParams(new FormData(form)).toString()
         })
             .then(function (response) {
                 if (response.ok) {
