@@ -6,7 +6,8 @@ body {
     font-style: 20px;
 }
 
-body, ul {
+body,
+ul {
     margin: 0;
     font-family: monospace;
     font-weight: bold;
@@ -132,6 +133,12 @@ footer {
     text-align: center;
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
     .column {
         flex: 100%;
@@ -177,7 +184,8 @@ footer {
         gap: 5px;
     }
 
-    iframe, video {
+    iframe,
+    video {
         max-width: 90%;
     }
 }
