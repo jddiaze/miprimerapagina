@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi Primer Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <header class="container-nav">
+        <nav class="navbar" role='navigation'>
+            <a href="mi-primer-website.html" class="brand">Mi página web</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Filosofía</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="button-menu-toggle">Menu</button>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Acerca de</h1>
+            <p>¡Bienvenido a nuestra página “Acerca de”! Aquí, aprenderás más sobre nuestra empresa y los servicios que
+                ofrecemos.</p>
+            <div class='img-container'>
+                <img src="resources/img1.jpg" alt="Descripción de la imagen 1" />
+                <img src="resources/img2.jpg" alt="Descripción de la imagen 2" />
+                <img src="resources/img3.webp" alt="Descripción de la imagen 3" />
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollador: David Díaz</p>
+        <button onClick="showAlert()" aria-label="Haz clic en mí">¡Haz clic en mí!</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
